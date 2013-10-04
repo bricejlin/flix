@@ -10,11 +10,15 @@ class Movie < ActiveRecord::Base
   RATINGS = %w[G PG PG-13 R NC-17]
   validates :rating, inclusion: { in: RATINGS }
 
-  has_attached_file :image
+  has_attached_file :image, styles: {
+    small: "90x133>",
+    thumb: "50x50>"
+  }
+  
   validates_attachment :image, 
   :content_type => { :content_type => ['image/jpeg', 'image/png'] },
   :size => { :less_than => 1.megabyte }
-  
+
   def self.released
     where("released_on <= ?", Time.now).order("released_on desc")
   end

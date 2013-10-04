@@ -11,7 +11,7 @@ describe "Viewing the list of movies" do
                           cast: "Robert Downey Jr., Gwyneth Paltrow and Terrence Howard",
                           director: "Jon Favreau",
                           duration: "126 min",
-                          image: open("#{Rails.root}/app/assets/images/ironman.jpg")
+                          image: open("#{Rails.root}/app/assets/images/ironman.jpg"))
 
     movie2 = Movie.create(title: "Superman",
                           rating: "PG",
@@ -21,7 +21,7 @@ describe "Viewing the list of movies" do
                           cast: "Christopher Reeve, Margot Kidder and Gene Hackman",
                           director: "Richard Donner",
                           duration: "143 min",
-                          image: open("#{Rails.root}/app/assets/images/superman.jpg")
+                          image: open("#{Rails.root}/app/assets/images/superman.jpg"))
 
     movie3 = Movie.create(title: "Spider-Man",
                           rating: "PG-13",
@@ -31,7 +31,7 @@ describe "Viewing the list of movies" do
                           cast: "Tobey Maguire, Kirsten Dunst and Willem Dafoe",
                           director: "Sam Raimi",
                           duration: "121 min",
-                          image: open("#{Rails.root}/app/assets/images/spiderman.jpg")
+                          image: open("#{Rails.root}/app/assets/images/spiderman.jpg"))
 
     visit movies_url
 

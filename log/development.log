@@ -9653,3 +9653,726 @@ Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-10-04 15:32:26 -04
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-04 15:32:26 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-04 15:47:27 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 19:47:28.152468') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 5]]
+  Rendered movies/index.html.erb within layouts/application (110.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 224ms (Views: 161.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2013-10-04 15:47:28 -0400
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-10-04 15:47:31 -0400
+Processing by MoviesController#new as HTML
+  Rendered shared/_errors.html.erb (2.0ms)
+  Rendered movies/_form.html.erb (19.6ms)
+  Rendered movies/new.html.erb within layouts/application (20.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/placeholder.png" for 127.0.0.1 at 2013-10-04 15:47:31 -0400
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-10-04 15:47:32 -0400
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sj3VG01aIgzZVtmO/YK7HEVyvGLcTiM8FhFqr1a/MQE=", "movie"=>{"title"=>"", "description"=>"", "rating"=>"", "released_on(1i)"=>"2013", "released_on(2i)"=>"10", "released_on(3i)"=>"4", "total_gross"=>"", "duration"=>"", "cast"=>"", "director"=>""}, "commit"=>"Create Movie"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_errors.html.erb (3.4ms)
+  Rendered movies/_form.html.erb (13.5ms)
+  Rendered movies/new.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered shared/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 22.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started GET "/assets/placeholder.png" for 127.0.0.1 at 2013-10-04 15:47:33 -0400
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sj3VG01aIgzZVtmO/YK7HEVyvGLcTiM8FhFqr1a/MQE=", "movie"=>{"title"=>"", "description"=>"", "rating"=>"", "released_on(1i)"=>"2013", "released_on(2i)"=>"10", "released_on(3i)"=>"4", "total_gross"=>"", "duration"=>"", "cast"=>"", "director"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fd332739af8 @tempfile=#<Tempfile:/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/RackMultipart20131004-31241-1l4w2n3>, @original_filename="batman-vs-godzilla.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[image]\"; filename=\"batman-vs-godzilla.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Movie"}
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk.jpg[0]' -auto-orient -resize "90x133>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk20131004-31241-1o8pf8y'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk20131004-31241-1o8pf8y'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk.jpg[0]' -auto-orient -resize "50x50>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk20131004-31241-1tzzkad'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31241-klv6kk20131004-31241-1tzzkad'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered shared/_errors.html.erb (3.4ms)
+  Rendered movies/_form.html.erb (13.8ms)
+  Rendered movies/new.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered shared/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 257ms (Views: 24.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started GET "/assets/placeholder.png" for 127.0.0.1 at 2013-10-04 15:47:47 -0400
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sj3VG01aIgzZVtmO/YK7HEVyvGLcTiM8FhFqr1a/MQE=", "movie"=>{"title"=>"Batman vs Godzilla", "description"=>"What the heck is this", "rating"=>"PG-13", "released_on(1i)"=>"2013", "released_on(2i)"=>"10", "released_on(3i)"=>"4", "total_gross"=>"1", "duration"=>"2 min", "cast"=>"", "director"=>""}, "commit"=>"Create Movie"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_errors.html.erb (0.7ms)
+  Rendered movies/_form.html.erb (8.7ms)
+  Rendered movies/new.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered shared/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started GET "/assets/placeholder.png" for 127.0.0.1 at 2013-10-04 15:48:09 -0400
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-10-04 15:48:13 -0400
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sj3VG01aIgzZVtmO/YK7HEVyvGLcTiM8FhFqr1a/MQE=", "movie"=>{"title"=>"Batman vs Godzilla", "description"=>"What the heck is this????", "rating"=>"PG-13", "released_on(1i)"=>"2013", "released_on(2i)"=>"10", "released_on(3i)"=>"4", "total_gross"=>"1", "duration"=>"2 min", "cast"=>"", "director"=>""}, "commit"=>"Create Movie"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", ""], ["created_at", Fri, 04 Oct 2013 19:48:13 UTC +00:00], ["description", "What the heck is this????"], ["director", ""], ["duration", "2 min"], ["rating", "PG-13"], ["released_on", Fri, 04 Oct 2013], ["title", "Batman vs Godzilla"], ["total_gross", #<BigDecimal:7fd3368111c0,'0.1E1',9(18)>], ["updated_at", Fri, 04 Oct 2013 19:48:13 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/7
+Completed 302 Found in 10ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/movies/7" for 127.0.0.1 at 2013-10-04 15:48:13 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 7]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT 2) subquery_for_count  [["movie_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 7]]
+  Rendered shared/_errors.html.erb (0.1ms)
+  Rendered movies/show.html.erb within layouts/application (17.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered shared/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 25.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+
+
+Started GET "/assets/placeholder.png" for 127.0.0.1 at 2013-10-04 15:48:14 -0400
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "total_gross" decimal, "created_at" datetime, "updated_at" datetime, "description" text, "released_on" date, "cast" varchar(255), "director" varchar(255), "duration" varchar(255), "image_file_name" varchar(255), "image_content_type" varchar(255), "image_file_size" integer, "image_updated_at" datetime) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "stars" integer, "comment" text, "movie_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.0ms)[0m  [1mCREATE INDEX "index_reviews_on_movie_id" ON "reviews" ("movie_id")[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131004190202')[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121121163535')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121121180707')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121210234158')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131003163150')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo.jpg[0]' -auto-orient -resize "90x133>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo20131004-31584-ytxujc'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo20131004-31584-ytxujc'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo.jpg[0]' -auto-orient -resize "50x50>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo20131004-31584-is9qqo'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-31584-rdsllo20131004-31584-is9qqo'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Robert Downey Jr., Gwyneth Paltrow and Terrence Howard"], ["created_at", Fri, 04 Oct 2013 19:50:38 UTC +00:00], ["description", "When wealthy industrialist Tony Stark is forced to build an armored suit after a life-threatening incident, he ultimately decides to use its technology to fight against evil."], ["director", "Jon Favreau"], ["duration", "126 min"], ["image_content_type", "image/jpeg"], ["image_file_name", "ironman.jpg"], ["image_file_size", 9511], ["image_updated_at", Fri, 04 Oct 2013 19:50:38 UTC +00:00], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7f9ed55fe8c8,'0.318412101E9',9(36)>], ["updated_at", Fri, 04 Oct 2013 19:50:38 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/superman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe.jpg[0]' -auto-orient -resize "90x133>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe20131004-31584-17g728y'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe20131004-31584-17g728y'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe.jpg[0]' -auto-orient -resize "50x50>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe20131004-31584-kmd63v'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/superman20131004-31584-tnuqe20131004-31584-kmd63v'
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Christopher Reeve, Margot Kidder and Gene Hackman"], ["created_at", Fri, 04 Oct 2013 19:50:38 UTC +00:00], ["description", "An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest super-hero."], ["director", "Richard Donner"], ["duration", "143 min"], ["image_content_type", "image/jpeg"], ["image_file_name", "superman.jpg"], ["image_file_size", 9737], ["image_updated_at", Fri, 04 Oct 2013 19:50:38 UTC +00:00], ["rating", "PG"], ["released_on", Fri, 15 Dec 1978], ["title", "Superman"], ["total_gross", #<BigDecimal:7f9ed574f880,'0.134218018E9',9(36)>], ["updated_at", Fri, 04 Oct 2013 19:50:38 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/spiderman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa.jpg[0]' -auto-orient -resize "90x133>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa20131004-31584-1b639xd'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa20131004-31584-1b639xd'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa.jpg[0]' -auto-orient -resize "50x50>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa20131004-31584-f3gxg7'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/spiderman20131004-31584-1yqfnwa20131004-31584-f3gxg7'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Tobey Maguire, Kirsten Dunst and Willem Dafoe"], ["created_at", Fri, 04 Oct 2013 19:50:39 UTC +00:00], ["description", "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family."], ["director", "Sam Raimi"], ["duration", "121 min"], ["image_content_type", "image/jpeg"], ["image_file_name", "spiderman.jpg"], ["image_file_size", 10703], ["image_updated_at", Fri, 04 Oct 2013 19:50:38 UTC +00:00], ["rating", "PG-13"], ["released_on", Fri, 03 May 2002], ["title", "Spider-Man"], ["total_gross", #<BigDecimal:7f9ed50cc530,'0.403706375E9',9(36)>], ["updated_at", Fri, 04 Oct 2013 19:50:39 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/batman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v.jpg[0]' -auto-orient -resize "90x133>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v20131004-31584-6svbvu'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v20131004-31584-6svbvu'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v.jpg[0]' -auto-orient -resize "50x50>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v20131004-31584-1g50blo'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman20131004-31584-1qyb07v20131004-31584-1g50blo'
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Michael Keaton, Jack Nicholson and Kim Basinger"], ["created_at", Fri, 04 Oct 2013 19:50:39 UTC +00:00], ["description", "The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker."], ["director", "Tim Burton"], ["duration", "126 min"], ["image_content_type", "image/jpeg"], ["image_file_name", "batman.jpg"], ["image_file_size", 8466], ["image_updated_at", Fri, 04 Oct 2013 19:50:39 UTC +00:00], ["rating", "PG-13"], ["released_on", Fri, 23 Jun 1989], ["title", "Batman"], ["total_gross", #<BigDecimal:7f9ed5496800,'0.251188924E9',9(36)>], ["updated_at", Fri, 04 Oct 2013 19:50:39 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/catwoman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c.jpg[0]' -auto-orient -resize "90x133>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c20131004-31584-1lrzfun'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c20131004-31584-1lrzfun'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c.jpg[0]' -auto-orient -resize "50x50>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c20131004-31584-1y0smhp'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/catwoman20131004-31584-8wxz5c20131004-31584-1y0smhp'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", "Halle Berry, Sharon Stone and Benjamin Bratt"], ["created_at", Fri, 04 Oct 2013 19:50:39 UTC +00:00], ["description", "Patience Philips seems destined to spend her life apologizing for taking up space. Despite her artistic ability&mdash;she has a more than respectable career as a graphic designer."], ["director", "Jean-Christophe 'Pitof' Comar"], ["duration", "101 min"], ["image_content_type", "image/jpeg"], ["image_file_name", "catwoman.jpg"], ["image_file_size", 8410], ["image_updated_at", Fri, 04 Oct 2013 19:50:39 UTC +00:00], ["rating", "PG-13"], ["released_on", Fri, 23 Jul 2004], ["title", "Catwoman"], ["total_gross", #<BigDecimal:7f9ed560c658,'0.402E8',9(36)>], ["updated_at", Fri, 04 Oct 2013 19:50:39 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/batman-vs-godzilla.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r.jpg[0]' -auto-orient -resize "90x133>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r20131004-31584-1l3jynl'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r20131004-31584-1l3jynl'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r.jpg[0]' -auto-orient -resize "50x50>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r20131004-31584-1lqhobd'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31584-lrcu1r20131004-31584-1lqhobd'
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cast", "Bruce Wayne, Gojira"], ["created_at", Fri, 04 Oct 2013 19:50:39 UTC +00:00], ["description", "An epic battle between The Caped Crusader and the fire-breathing dinosaur Gojira. Hang on to your popcorn, kids!"], ["director", "Ishiro Honda"], ["duration", "211 min"], ["image_content_type", "image/jpeg"], ["image_file_name", "batman-vs-godzilla.jpg"], ["image_file_size", 10199], ["image_updated_at", Fri, 04 Oct 2013 19:50:39 UTC +00:00], ["rating", "PG-13"], ["released_on", Mon, 14 Oct 2013], ["title", "Batman vs. Godzilla"], ["total_gross", #<BigDecimal:7f9ed5736510,'0.38762391E9',9(36)>], ["updated_at", Fri, 04 Oct 2013 19:50:39 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-04 15:50:41 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 19:50:41.689272') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 5]]
+  Rendered movies/index.html.erb within layouts/application (16.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered shared/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 88ms (Views: 86.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-04 15:50:41 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 19:50:41.781407') ORDER BY released_on desc[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  Rendered movies/index.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered shared/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/placeholder.png" for 127.0.0.1 at 2013-10-04 15:50:41 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-04 15:50:42 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 19:50:42.727456') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 7]]
+  [1m[35m (0.2ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 5]]
+  Rendered movies/index.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered shared/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/placeholder.png" for 127.0.0.1 at 2013-10-04 15:50:42 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-04 15:50:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 19:50:50.088210') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 5]]
+  Rendered movies/index.html.erb within layouts/application (103.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 233ms (Views: 194.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-04 15:50:50 -0400
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2013-10-04 15:50:52 -0400
+Processing by MoviesController#new as HTML
+  Rendered shared/_errors.html.erb (2.3ms)
+  Rendered movies/_form.html.erb (60.8ms)
+  Rendered movies/new.html.erb within layouts/application (62.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/placeholder.png" for 127.0.0.1 at 2013-10-04 15:50:53 -0400
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sj3VG01aIgzZVtmO/YK7HEVyvGLcTiM8FhFqr1a/MQE=", "movie"=>{"title"=>"", "description"=>"", "rating"=>"", "released_on(1i)"=>"2013", "released_on(2i)"=>"10", "released_on(3i)"=>"4", "total_gross"=>"", "duration"=>"", "cast"=>"", "director"=>""}, "commit"=>"Create Movie"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_errors.html.erb (5.4ms)
+  Rendered movies/_form.html.erb (16.0ms)
+  Rendered movies/new.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered shared/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started GET "/assets/placeholder.png" for 127.0.0.1 at 2013-10-04 15:50:54 -0400
+
+
+Started POST "/movies" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sj3VG01aIgzZVtmO/YK7HEVyvGLcTiM8FhFqr1a/MQE=", "movie"=>{"title"=>"aasdf asdf asdf asdf ", "description"=>" asdf asdf asdf adfs asdf asdf asdf ddsdf", "rating"=>"PG", "released_on(1i)"=>"2013", "released_on(2i)"=>"10", "released_on(3i)"=>"4", "total_gross"=>"1", "duration"=>"1", "cast"=>"", "director"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f8ac69a1110 @tempfile=#<Tempfile:/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/RackMultipart20131004-31664-1lh7y6g>, @original_filename="batman-vs-godzilla.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[image]\"; filename=\"batman-vs-godzilla.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Movie"}
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko.jpg[0]' -auto-orient -resize "90x133>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko20131004-31664-64byyz'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko20131004-31664-64byyz'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko.jpg[0]'
+Command :: identify -format %m '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko.jpg[0]'
+Command :: convert '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko.jpg[0]' -auto-orient -resize "50x50>" '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko20131004-31664-izruw7'
+Command :: file -b --mime '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/batman-vs-godzilla20131004-31664-aviyko20131004-31664-izruw7'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `image_content_type`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "movies" ("cast", "created_at", "description", "director", "duration", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cast", ""], ["created_at", Fri, 04 Oct 2013 19:51:12 UTC +00:00], ["description", " asdf asdf asdf adfs asdf asdf asdf ddsdf"], ["director", ""], ["duration", "1"], ["image_content_type", "image/jpeg"], ["image_file_name", "batman-vs-godzilla.jpg"], ["image_file_size", 10199], ["image_updated_at", Fri, 04 Oct 2013 19:51:12 UTC +00:00], ["rating", "PG"], ["released_on", Fri, 04 Oct 2013], ["title", "aasdf asdf asdf asdf "], ["total_gross", #<BigDecimal:7f8ac6a28c50,'0.1E1',9(18)>], ["updated_at", Fri, 04 Oct 2013 19:51:12 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies/7
+Completed 302 Found in 190ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/movies/7" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 7]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM "reviews" WHERE "reviews"."movie_id" = ? LIMIT 2) subquery_for_count  [["movie_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 7]]
+  Rendered shared/_errors.html.erb (0.1ms)
+  Rendered movies/show.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered shared/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 111ms (Views: 25.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-04 15:51:12 -0400
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "total_gross" decimal, "created_at" datetime, "updated_at" datetime, "description" text, "released_on" date, "cast" varchar(255), "director" varchar(255), "duration" varchar(255), "image_file_name" varchar(255), "image_content_type" varchar(255), "image_file_size" integer, "image_updated_at" datetime) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "stars" integer, "comment" text, "movie_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.3ms)[0m  [1mCREATE INDEX "index_reviews_on_movie_id" ON "reviews" ("movie_id")[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131004190202')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121121163535')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20121121180707')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20121210234158')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20131003163150')[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-04 15:53:55 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 19:53:55.198694') ORDER BY released_on desc
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 5]]
+  [1m[35m (0.1ms)[0m  SELECT AVG("reviews"."stars") AS avg_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 5]]
+  Rendered movies/index.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered shared/_flashes.html.erb (0.1ms)
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.7ms)

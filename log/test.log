@@ -6645,3 +6645,315 @@ Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79l
   [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
   [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-meepj.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-meepj.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-zr4pj5.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-zr4pj5.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 20:09:43.288216') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-1rarsbn.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-1rarsbn.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 20:09:43.378086') ORDER BY released_on desc[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-pz0772.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-pz0772.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-bklnxc.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-bklnxc.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-1ymyqv0.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-1ymyqv0.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-g6mlq7.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-g6mlq7.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-ma7jc3.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-ma7jc3.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-3clkv9.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32610-3clkv9.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 20:09:43.861992') ORDER BY released_on desc
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-172af3y.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-172af3y.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 20:10:15.789646') ORDER BY released_on desc
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-g9gmcr.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-g9gmcr.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-1l9xe10.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-1l9xe10.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-kh52au.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-kh52au.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-1ococzz.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-1ococzz.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-1u226sp.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-1u226sp.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-7yvz9f.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-7yvz9f.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 20:10:16.162497') ORDER BY released_on desc[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-1vr12a5.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-1vr12a5.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 20:10:16.197947') ORDER BY released_on desc
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-1efymju.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-32860-1efymju.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-1cxq09h.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-1cxq09h.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 20:10:20.553255') ORDER BY released_on desc
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-eogexo.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-eogexo.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 20:10:20.644370') ORDER BY released_on desc[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-19v8apn.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-19v8apn.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-19tal4b.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-19tal4b.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-lypswm.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-lypswm.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-pjsrwa.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-pjsrwa.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-19ugdha.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-19ugdha.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (released_on <= '2013-10-04 20:10:20.934291') ORDER BY released_on desc
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-15ny4vj.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-15ny4vj.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/Users/bricelin/Coding/rails_projects/prag_studio/flix/app/assets/images/ironman.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-wqhei8.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/5g/lsym79lx247_qrg90lgcs6_m0000gn/T/ironman20131004-33091-wqhei8.jpg[0]'
+[paperclip] An error was received while processing: #<Paperclip::Errors::CommandNotFoundError: Could not run the `identify` command. Please install ImageMagick.>
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

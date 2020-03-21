@@ -3,7 +3,7 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 gem 'paperclip'
-gem 'aws-sdk'
+gem 'aws-sdk', '>= 1.52.0'
 
 group :development, :test do
 end
@@ -21,7 +21,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 group :doc do
-  gem 'sdoc', require: false
+  gem 'sdoc', '>= 0.4.0', require: false
 end
 
 group :test, :development do

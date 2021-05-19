@@ -3,7 +3,7 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 gem 'paperclip'
-gem 'aws-sdk'
+gem 'aws-sdk', '>= 1.3.9'
 
 group :development, :test do
 end

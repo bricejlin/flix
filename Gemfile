@@ -3,7 +3,7 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 gem 'paperclip'
-gem 'aws-sdk'
+gem 'aws-sdk', '>= 1.4.0'
 
 group :development, :test do
 end
@@ -30,5 +30,5 @@ group :test, :development do
 end
 
 group :test do
-  gem "capybara", "2.1.0"
+  gem "capybara", "2.2.0"
 end
